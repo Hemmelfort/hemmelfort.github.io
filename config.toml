@@ -1,4 +1,4 @@
-baseURL = "http://127.0.0.1"
+baseURL = "https://hemmelfort.gitee.io/web-devlife"
 languageCode = "en-us"
 title = "Hemmelfort"
 theme = "wei"
