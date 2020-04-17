@@ -1,6 +1,8 @@
 
-.header-title {
-    
+
+.header-box {
+    //background-repeat: repeat-x center center;
+    background-position: center 20%; 
 }
 
 .post-date {
@@ -15,8 +17,14 @@
 
 .post-content {
     margin-top: 2em;
-    background-color: #eee;
+    background-color: #fafafa;
     padding: 1em 1em 3em 1em;
+
+    //background: #000000;
+    background-image: linear-gradient(to bottom, #eeeeee 0, #eeeeee 1px, transparent 1px), linear-gradient(to right, #eeeeee 0, #eeeeee 1px, transparent 1px);
+    background-size: 25px 25px;
+    //background-repeat: repeat;
+
 }
 
 .mainfooter {
