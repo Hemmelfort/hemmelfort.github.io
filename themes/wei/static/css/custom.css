@@ -1,0 +1,27 @@
+
+.header-title {
+    
+}
+
+.post-date {
+    font-style: italic;
+    color: grey;
+}
+
+.post-author {
+    font-style: italic;
+    color: #666;
+}
+
+.post-content {
+    margin-top: 2em;
+    background-color: #eee;
+    padding: 1em 1em 3em 1em;
+}
+
+.mainfooter {
+    margin-top: 5em;
+}
+
+
+

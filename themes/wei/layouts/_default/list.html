@@ -1,0 +1,18 @@
+
+<html>
+{{ partial "head.html" . }}
+
+<body>
+    {{ partial "header.html" . }}
+    
+    <section class="article-list">
+        <h1>{{ .Title }}</h1>
+        {{ range .Data.Pages }}
+            <hr/>
+            {{ .Render "li" }}
+        {{ end }}
+    </section>
+
+    {{ partial "footer.html" . }}
+</body>
+</html>
