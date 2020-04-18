@@ -3,6 +3,7 @@ title: "文明6 MOD辅助工具 v1.5"
 date: 2019-03-18T00:01:21+08:00
 draft: false
 author: Hemmelfort
+homepage: www.baidu.com
 ---
 
 > 下载链接：[腾讯微云](https://share.weiyun.com/5iKCWF1)

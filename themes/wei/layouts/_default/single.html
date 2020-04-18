@@ -9,7 +9,7 @@
         <h1>{{ .Title }}</h1>
         <div>⏰ 
             <span class="post-date">{{ .Date.Format "2006.01.02" }}</span>
-            <a class="post-author" href="#">, {{ .Params.Author }}</a>
+            <a class="post-author" href="#">{{ .Params.Author }}</a>
         </div>
         <div class="post-content container">
             {{ .Content }}
