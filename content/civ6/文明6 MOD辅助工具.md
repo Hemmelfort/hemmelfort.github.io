@@ -12,14 +12,16 @@ homepage: www.baidu.com
 1. 将图片素材批量转换成不同分辨率的图标文件，并生成相应的 Atlas。支持多图标文件。
 2. 支持导出 ModBuddy 所需的 `Mod.Art.xml` 文件。
 3. 支持创建自定义修改器 Modifier，内置 **EffectType** 、**Requirement** 关联列表，可以快速实现各种修改效果。
-4. 批量文本定义，自动扫描并收集 MOD 项目文件中全部的文本词条，方便统一修改。
+4. 批量文本定义，收集 MOD 项目中的文本词条，方便统一修改。
 5. 用填表的方式来创建新文明需要的 xml 文件。
 
 
 
 ## v1.6
 
-2020.06
+2020.06.30
+
+- https://hemmelfort.lanzous.com/iPu9qe5v82f
 
 1. 配合 Asset Editor 的改进，可以生成 png 格式的图标，而不只是 dds。
 2. 配合 ModBuddy 的改进，能直接生成对应文件名、并支持更多参数的 .Art.xml 文件。
