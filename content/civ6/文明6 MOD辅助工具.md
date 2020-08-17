@@ -17,11 +17,12 @@ homepage: www.baidu.com
 
 
 
-## v1.6
+## v1.63
 
 2020.06.30
 
-- https://hemmelfort.lanzous.com/iPu9qe5v82f
+- https://hemmelfort.lanzous.com/iV8ymf2megj
+- https://drive.google.com/file/d/1AOIu2vuUjNoxd9bjbo6dVxV5VLu0_Diz/view?usp=sharing
 
 1. 配合 Asset Editor 的改进，可以生成 png 格式的图标，而不只是 dds。
 2. 配合 ModBuddy 的改进，能直接生成对应文件名、并支持更多参数的 .Art.xml 文件。
