@@ -17,11 +17,11 @@ homepage: www.baidu.com
 
 
 
-## v1.63
+## v1.64
 
 2020.06.30
 
-- https://hemmelfort.lanzous.com/iV8ymf2megj
+- https://hemmelfort.lanzoui.com/iPnA5gdrpef
 - https://drive.google.com/file/d/1AOIu2vuUjNoxd9bjbo6dVxV5VLu0_Diz/view?usp=sharing
 
 1. 配合 Asset Editor 的改进，可以生成 png 格式的图标，而不只是 dds。
