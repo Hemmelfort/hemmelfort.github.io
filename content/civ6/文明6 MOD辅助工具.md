@@ -1,6 +1,6 @@
 ---
 title: "文明6 MOD辅助工具"
-date: 2019-03-18T00:01:21+08:00
+date: 2019-03-18
 draft: false
 author: Hemmelfort
 homepage: www.baidu.com

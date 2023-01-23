@@ -10,13 +10,21 @@
 }
 
 .post-date {
-    //font-style: italic;
-    color: lightgrey;
+    color: grey;
+    font-size: small;
+    font-family: consolas;
+    font-style: oblique;
 }
 
 .post-author {
-    //font-style: italic;
-    color: lightgrey;
+    color: grey;
+    font-size: small;
+    font-family: consolas;
+    font-style: oblique;
+}
+
+.post-author::before {
+    content: "@";
 }
 
 .post-content {
