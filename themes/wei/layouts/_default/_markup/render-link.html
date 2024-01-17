@@ -1,0 +1,4 @@
+<!-- 取代自带渲染器对链接的渲染方式 -->
+
+<a href="{{ .Destination | safeURL }}" {{ with .Title }} title="{{ . }}" {{ end }}{{ if strings.HasPrefix
+    .Destination "http" }} target="_blank" rel="noopener" {{ end }}>{{ .Text | safeHTML }}</a>

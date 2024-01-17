@@ -1,0 +1,22 @@
+<html>
+{{ partial "head.html" . }}
+
+<body>
+
+    {{ partial "header.html" . }}
+
+    <div class="container">
+        <h1>{{ .Title }}</h1>
+        <p>没有找到你要的页面。</p>
+        <span>
+            <a href="javascript:history.back(-1);">返回上一页</a>
+            |
+            <a href="{{ .Site.BaseURL | safeURL }}">返回主页</a>
+        </span>
+
+    </div>
+
+    {{ partial "footer.html" . }}
+</body>
+
+</html>

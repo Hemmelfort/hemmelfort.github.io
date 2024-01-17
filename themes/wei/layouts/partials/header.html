@@ -1,10 +1,40 @@
+<!-- 页面的顶部 -->
 
+{{ $base_url := .Site.BaseURL | safeURL }}
 
-<div class="jumbotron header-box"  style="background-image: url({{ .Site.BaseURL }}/images/head_bg.jpg);">
-    <div class="container">
-        <h2 class="header-title">
-            <a href="{{ .Site.BaseURL }}" style="text-decoration: none;color:white">DevLife</a>
-        </h2>
+<!-- 大横幅 -->
+<div class="container-fluid"
+    style="background-image: url({{$base_url}}/images/head_bg.jpg); background-position: center 20%;">
+    <div class="container custom-jumbotron">
+
+        {{with .Site.Title }}
+        <p class="custom-jumbotron-para">{{.}}</p>
+        {{end}}
     </div>
 </div>
 
+<!-- 顶部菜单栏 -->
+<div class="sticky-top navmenu">
+
+    <!-- 头像要依赖于一个relative的父级 -->
+    <div class="container" style="display: flex; align-items: stretch; height: inherit;">
+
+        <a class="nav-link navitem" href="{{$base_url}}"><i class="fa fa-home"></i> 首页</a>
+        <a class="nav-link navitem" href="{{$base_url}}/categories">文章分类</a>
+
+        {{ if .IsPage }}
+        {{ $section := .Site.GetPage .Section }}
+        <a class="nav-link navitem" href="{{$section.Permalink | safeURL }}">返回章节</a>
+        {{ end }}
+
+        <!-- flex-grow-1 获取剩余空间 -->
+        <span style="flex-grow: 1; display: flex; flex-direction: row-reverse; align-items: center;">
+            <a href="{{$base_url}}/about">
+                <img class="avatar-icon" src="{{$base_url}}/images/avatar.jpg" alt="author">
+            </a>
+        </span>
+
+    </div>
+</div>
+
+<div style="margin-top: 2rem;"></div>

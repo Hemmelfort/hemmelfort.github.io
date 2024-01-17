@@ -1,0 +1,15 @@
+<!-- 专门用来显示文章列表 -->
+
+<div class="container">
+    <div class="article-list">
+
+        {{ range $index, $page := .Paginator.Pages.ByLastmod.Reverse }}
+        {{ if ne $index 0 }}
+        <hr />
+        {{ end }}
+        {{ .Render "li" }}
+        {{ end }}
+    </div>
+
+    {{ partial "pagination.html" .Paginator }}
+</div>

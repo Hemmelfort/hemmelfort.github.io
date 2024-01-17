@@ -1,18 +1,24 @@
+<!-- 列表页面 -->
 
 <html>
 {{ partial "head.html" . }}
 
 <body>
     {{ partial "header.html" . }}
-    
-    <section class="article-list">
-        <h1>{{ .Title }}</h1>
-        {{ range .Data.Pages }}
-            <hr/>
-            {{ .Render "li" }}
-        {{ end }}
-    </section>
+
+    <div class="container category-list">
+        <div>
+            <span style="font-size: 1.5rem; font-weight: bold;">{{ .Title }}</span>
+            <span style="font-size: 0.75rem; color: grey;">
+                <i class="fa fa-file-text-o"></i>
+                文章数：{{ .Data.Pages | len }}</span>
+        </div>
+        <hr />
+
+        {{ partial "articlelist.html" .}}
+    </div>
 
     {{ partial "footer.html" . }}
 </body>
+
 </html>

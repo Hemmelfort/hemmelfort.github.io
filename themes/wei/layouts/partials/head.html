@@ -1,10 +1,35 @@
+<!-- 放在 html 标签的 head 头部 -->
+
+{{ $base_url := .Site.BaseURL | safeURL }}
 
 <head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title> {{.Title}} </title>
-    <link rel="shortcut icon" href="{{.Site.BaseURL}}/favicon.ico"/>
-    <link rel="stylesheet" href="{{.Site.BaseURL}}/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="{{.Site.BaseURL}}/css/custom.css"/>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>{{ .Title }}</title>
+  <link rel="shortcut icon" href="{{$base_url}}/favicon.ico" />
+  <link rel="stylesheet" href="{{$base_url}}/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="{{$base_url}}/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="{{$base_url}}/css/custom.css" />
+
+  <script src="{{$base_url}}/js/jquery-3.7.1.min.js"></script>
+  <script src="{{$base_url}}/js/bootstrap.bundle.min.js"></script>
+
+  <!-- script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" -->
+
+  <!--script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        displayMath: [['$$','$$'], ['\[','\]']],
+        processEscapes: true,
+        processEnvironments: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+        TeX: { equationNumbers: { autoNumber: "AMS" },
+            extensions: ["AMSmath.js", "AMSsymbols.js"] }
+      }
+    });
+  </script-->
+
+
 
 </head>

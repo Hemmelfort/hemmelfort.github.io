@@ -3,6 +3,7 @@ title: "文明6 MOD开发所需的各种链接"
 date: 2020-04-18T15:35:25+08:00
 draft: false
 author: Hemmelfort
+isCJKLanguage: true
 ---
 
 本文记录的是在文明6模组开发过程中所需要的各种软件、工具的下载链接。

@@ -1,22 +1,43 @@
+<!-- 具体一篇文章的页面 -->
 
 <html>
 {{ partial "head.html" . }}
 
 <body>
     {{ partial "header.html" . }}
-    
+
     <div class="container">
-        <h1>{{ .Title }}</h1>
-        <div>⏰ 
-            <span class="post-date">{{ .Date.Format "2006.01.02" }}</span>
-            <a class="post-author" href="">{{ .Params.Author }}</a>
+        <h1 class="article-title">{{ .Title }}</h1>
+        <div class="article-info">
+            <i class="fa fa-clock-o"></i>
+            <span>发布于：{{ .Date.Format "2006.01.02" }}</span>
+            <i class="fa fa-vcard-o" style="margin-left: 0.5em;"></i>
+            作者：<a>{{ .Params.Author }}</a>
+
+            <i class="fa fa-book" style="margin-left: 0.5em;"></i>
+            <span>字数: {{ .WordCount }}</span>
         </div>
-        <div class="post-content container">
+
+        <div class="article-info">
+            {{ if ne .Date .Lastmod }}
+            <i class="fa fa-pencil-square"></i>
+            <span>最后更新：{{ .Lastmod.Format "2006.01.02" }}</span>
+            {{ end }}
+        </div>
+
+        <!-- <div id="toc" style="display: block;">
+            {{ .TableOfContents }}
+        </div> -->
+
+        <!-- 文章的正文 -->
+        <div class="article-content">
             {{ .Content }}
         </div>
     </div>
-    
+
+
 
     {{ partial "footer.html" . }}
 </body>
+
 </html>

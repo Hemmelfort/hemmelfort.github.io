@@ -1,9 +1,9 @@
 ---
-title: "文明6 MOD辅助工具"
+title: 文明6 MOD辅助工具 更新日志
 date: 2019-03-18
 draft: false
 author: Hemmelfort
-homepage: www.baidu.com
+isCJKLanguage: true
 ---
 
 
@@ -15,7 +15,7 @@ homepage: www.baidu.com
 4. 批量文本定义，收集 MOD 项目中的文本词条，方便统一修改。
 5. 用填表的方式来创建新文明需要的 xml 文件。
 
-
+![v1.64版](_v_images/image-20210519223350036.jpg)
 
 ## v1.64
 

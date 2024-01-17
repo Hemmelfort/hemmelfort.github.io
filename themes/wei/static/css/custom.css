@@ -1,47 +1,175 @@
-
-
-.header-box {
-    //background-repeat: repeat-x center center;
-    background-position: center 20%; 
+/* -代替bootstrap的大屏幕- */
+.custom-jumbotron {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 10rem;
 }
 
-.artical-summary{
+.custom-jumbotron-para {
+    color: white;
+    text-shadow: 1px 0 black;
+    font-weight: bold;
+}
+
+/* 导航栏菜单 */
+.navmenu {
+    background-color: #e9ecef;
+    border-bottom: #cacaca 1px solid;
+    height: 50px;
+}
+
+.navitem {
+    display: inline-block;
+    padding: 13px 0.8rem;
+}
+
+.navitem:hover {
+    background-color: #cacaca;
+}
+
+.avatar-icon {
+    width: 40px;
+    border-radius: 50%;
+    border: #343a40 1px solid;
+}
+
+.avatar-icon:hover {
+    border: #4bb4f6 2px solid;
+}
+
+/* 文章 */
+.article-summary {
     color: grey;
 }
 
-.post-date {
-    color: grey;
+.article-title {
+    font-size: 1.5rem;
+}
+
+.article-info {
+    color: darkgrey;
+    font-size: small;
+}
+
+.article-info a {
+    color: darkgrey;
+}
+
+/* md文章中的图片 */
+.md__image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* 翻页器 */
+.paginator-area {
+    display: grid;
+    justify-content: left;
+    margin-top: 2rem;
+}
+
+/* .post-date {
+    color: darkgrey;
     font-size: small;
     font-family: consolas;
     font-style: oblique;
 }
 
 .post-author {
-    color: grey;
+    color: darkgrey;
     font-size: small;
     font-family: consolas;
     font-style: oblique;
 }
 
 .post-author::before {
-    content: "@";
-}
+    content: "by ";
+} */
 
-.post-content {
+/* md正文 */
+.article-content {
     margin-top: 2em;
     background-color: #fafafa;
     padding: 1em 1em 3em 1em;
 
-    //background: #000000;
-    background-image: linear-gradient(to bottom, #eeeeee 0, #eeeeee 1px, transparent 1px), linear-gradient(to right, #eeeeee 0, #eeeeee 1px, transparent 1px);
-    background-size: 25px 25px;
-    //background-repeat: repeat;
+    /* background: #000000; */
+    background-image: linear-gradient(to bottom, #f8f8f8 0, #eeeeee 1px, transparent 1px), linear-gradient(to right, #f8f8f8 0, #eeeeee 1px, transparent 1px);
+    background-size: 1em 1em;
+    /* background-repeat: repeat; */
 
+    overflow: auto;
 }
+
+
+/* md正文标题 */
+.article-content h1 {
+    display: none;
+}
+
+.article-content h2 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+/* md代码块 */
+.highlight pre {
+    border: black 1px solid;
+    border-radius: 5px;
+    padding: 0.3em;
+    font-size: 0.8em;
+    /* margin: 0.5em; */
+}
+
+/* 表格边框及背景 */
+table {
+    /* border-top: #cacaca 1px solid; */
+    border: #cacaca 1px solid;
+    margin-bottom: 1em;
+    width: 100%;
+}
+
+table td,
+table th {
+    border-bottom: #c3c3c3 1px dashed;
+    border-right: #c3c3c3 1px dashed;
+    padding: 5px;
+}
+
+table thead {
+    background-color: #d0e7ff;
+}
+
+/* 表格隔行变色 */
+tr:nth-child(odd) td {
+    background-color: #ffffff;
+}
+
+tr:nth-child(even) td {
+    background-color: #f2f2f2;
+}
+
+tr:hover td {
+    background-color: #d0e7ff;
+}
+
+
+/* 引用 */
+blockquote {
+    border-left: 3px solid #4bb4f6;
+    border-radius: 5px;
+    background-color: #eeeeee;
+    color: #808080;
+    padding: 10 10 10 20;
+    font-size: 0.9rem;
+}
+
+blockquote p {
+    margin: 0;
+}
+
 
 .mainfooter {
-    margin-top: 5em;
+    margin: 5em 0 1em 0;
 }
-
-
-

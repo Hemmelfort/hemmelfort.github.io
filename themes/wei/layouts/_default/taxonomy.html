@@ -1,0 +1,39 @@
+<!-- 分类页面 -->
+<!-- Context 是 Page -->
+
+<html>
+{{ partial "head.html" . }}
+
+<body>
+    {{ partial "header.html" . }}
+
+    <!-- <section class="article-list">
+        <h1>{{ .Title }}</h1>
+        {{ range .Data.Pages }}
+        <hr />
+        {{ .Render "li" }}
+        {{ end }}
+    </section> -->
+
+
+    <div class="category-list container">
+        <h3>{{ .Title }}</h3>
+        <hr />
+
+        <div class="list-group">
+            {{ range .Site.Sections }}
+            <a class="list-group-item" href="{{.Permalink | safeURL}}">
+                {{.Title}}
+                <span class="badge badge-pill badge-primary">
+                    {{.Data.Pages | len}}
+                </span>
+            </a>
+            {{ end }}
+        </div>
+
+    </div>
+
+    {{ partial "footer.html" . }}
+</body>
+
+</html>

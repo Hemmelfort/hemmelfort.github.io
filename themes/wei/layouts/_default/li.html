@@ -1,19 +1,30 @@
+<!-- li.html: 表示文章列表中的每一篇文章占据的区域 -->
+<!-- 包含这篇文章的标题、作者、摘要等内容 -->
+
+
 <article>
     <header>
-        <h2>
-            <a href="{{ .Permalink }}">{{ .Title }}</a>
+        <h2 class="article-title">
+            <a href="{{ .Permalink | safeURL }}">{{ .Title }}</a>
         </h2>
-        <span class="post-date">{{ .Date.Format "2006.01.02" }}</span>
-        <a class="post-author">{{ .Params.Author }}</a>
+
+        <div class="article-info">
+            {{ with $section := (.Site.GetPage .Section) }}
+            <a href="{{$section.Permalink | safeURL}}">[{{ $section.Title }}]</a>
+            {{ end }}
+            <span>{{ .Lastmod.Format "2006.01.02" }}</span>
+            <span>字数: {{ .WordCount }}</span>
+        </div>
+
     </header>
 
     <div>
-        <span class="artical-summary">
-            {{ .Summary }}
+        <span class="article-summary">
+            {{ chomp .Summary }}
         </span>
         {{ if .Truncated }}
-            <a href="{{ .Permalink }}" > ...... 更多⋙ </a>
+        <a href="{{ .Permalink | safeURL }}"> ......查看全文</a>
         {{ end }}
     </div>
-    
+
 </article>

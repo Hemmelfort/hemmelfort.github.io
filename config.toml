@@ -1,5 +1,25 @@
 baseURL = "https://hemmelfort.gitee.io/web-devlife"
-languageCode = "en-us"
-title = "Hemmelfort"
+hasCJKLanguage = true
+title = "Hemmelfort的个人小站"
 theme = "wei"
-summaryLength = 10
+summaryLength = 56
+#paginate = 5
+
+[params]
+AuthorName = "Hemmelfort"
+AuthorHomepage = "https://space.bilibili.com/28399130"
+
+
+
+
+
+[markup]
+#    [markup.tableOfContents]
+#    startLevel = 2
+#    endLevel = 2
+
+    # 保留md文件中的html标签
+    [markup.goldmark.renderer]
+    unsafe = true
+
+
