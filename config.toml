@@ -1,6 +1,6 @@
-baseURL = "https://hemmelfort.gitee.io/web-devlife"
+baseURL = "https://hemmelfort.github.io"
 hasCJKLanguage = true
-title = "Hemmelfort的个人小站"
+title = "Hemmelfort的小站"
 theme = "wei"
 summaryLength = 56
 #paginate = 5

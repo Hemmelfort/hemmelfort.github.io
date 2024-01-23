@@ -1,9 +1,9 @@
 <!-- 自己渲染图片 -->
 
-<!-- 图片还是不行，太大会被裁！ -->
-<div class="md__image" style="display: flex; justify-content: center; overflow: auto;">
+<div class="md__image" style="display: grid; overflow: auto;">
     <img src="{{ .Destination | safeURL }}" alt="{{ .Text }}" />
-    {{ with .Text }}
-    <small class="article-info">{{ . }}</small>
-    {{ end }}
 </div>
+
+{{ with .Text }}
+<center class="article-info">{{ . }}</center>
+{{ end }}
