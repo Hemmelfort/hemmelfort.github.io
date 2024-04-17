@@ -81,7 +81,7 @@ https://docs.google.com/spreadsheets/d/1hQ8zlEHl1nfjCWvKqOlkDACezu5-igfQkVcOxeE_
 
 用途：供没有 Steam 版《文明6》的玩家（如在 Epic 平台入手的）使用的 ModBuddy。
 
-链接：https://pan.baidu.com/s/1ibCp4MO6Ur5h7DqqkfzZdg 
+链接： https://pan.baidu.com/s/1ibCp4MO6Ur5h7DqqkfzZdg 
 提取码：lgjy
 
 

@@ -1,3 +1,15 @@
+
+:root {
+    --navbar-height: 3em;
+}
+
+/* 修改bs的属性 */
+.list-group-item:hover {
+    color: white;
+    background-color: var(--primary);
+}
+
+
 /* -代替bootstrap的大屏幕- */
 .custom-jumbotron {
     display: flex;
@@ -16,7 +28,7 @@
 .navmenu {
     background-color: #e9ecef;
     border-bottom: #cacaca 1px solid;
-    height: 50px;
+    height: var(--navbar-height);
 }
 
 .navitem {
@@ -26,6 +38,16 @@
 
 .navitem:hover {
     background-color: #cacaca;
+}
+
+#chapterList {
+    display: block;
+    position: absolute;
+    top: var(--navbar-height);
+    visibility: hidden;
+    background: #eeeeee;
+    border: grey 1px;
+    box-shadow: grey 5px 8px 10px;
 }
 
 .avatar-icon {
@@ -104,6 +126,10 @@
 
 
 /* md正文标题 */
+h1, h2, h3, h4, h5 {
+    margin-top: 1em;
+}
+
 .article-content h1 {
     display: none;
 }

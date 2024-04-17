@@ -12,7 +12,7 @@
             {{ with $section := (.Site.GetPage .Section) }}
             <a href="{{$section.Permalink | safeURL}}">[{{ $section.Title }}]</a>
             {{ end }}
-            <span>{{ .Lastmod.Format "2006.01.02" }}</span>
+            <span title="最后修改时间">{{ .Lastmod.Format "2006.01.02" }}</span>
             <span>字数: {{ .WordCount }}</span>
         </div>
 
@@ -23,7 +23,7 @@
             {{ chomp .Summary }}
         </span>
         {{ if .Truncated }}
-        <a href="{{ .Permalink | safeURL }}"> ......查看全文</a>
+        ……<a href="{{ .Permalink | safeURL }}">查看全文</a>
         {{ end }}
     </div>
 
