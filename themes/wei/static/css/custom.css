@@ -6,7 +6,7 @@
 /* 修改bs的属性 */
 .list-group-item:hover {
     color: white;
-    background-color: var(--primary);
+    background-color: var(--secondary);
 }
 
 
@@ -53,11 +53,11 @@
 .avatar-icon {
     width: 40px;
     border-radius: 50%;
-    border: #343a40 1px solid;
+    border: var(--gray-dark) 1px solid;
 }
 
 .avatar-icon:hover {
-    border: #4bb4f6 2px solid;
+    border: var(--primary) 2px solid;
 }
 
 /* 文章 */

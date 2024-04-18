@@ -25,7 +25,7 @@
                 {{ range .Site.Sections }}
                 <a class="list-group-item nav-link" href="{{.Permalink | safeURL}}">
                     {{.Title}}
-                    <span class="badge badge-pill badge-info">
+                    <span class="badge badge-warning">
                         {{.Data.Pages | len}}
                     </span>
                 </a>
