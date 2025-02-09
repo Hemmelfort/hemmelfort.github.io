@@ -86,5 +86,12 @@ https://docs.google.com/spreadsheets/d/1hQ8zlEHl1nfjCWvKqOlkDACezu5-igfQkVcOxeE_
 
 
 
+### RAD Tools
+
+用途：将 .avi 格式的视频转换成 .bik 格式，在游戏中某些可以播放视频的地方用到（比如主菜单界面的背景视频）。
+
+- 官方下载： https://www.radgametools.com/bnkdown.htm
 
 
+
+bik 文件更多信息可以参考：https://www.niuxuezhang.cn/video-format/convert-mp4-to-bik.html
