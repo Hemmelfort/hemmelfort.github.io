@@ -5,9 +5,6 @@ draft: false
 author: Hemmelfort
 isCJKLanguage: true
 ---
-
 随便搭建的网站，用来分享一些有趣的东西。
 
-联系方式：
-
-- https://space.bilibili.com/28399130
+联系我： https://space.bilibili.com/28399130

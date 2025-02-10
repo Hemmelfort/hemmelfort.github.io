@@ -1,6 +1,7 @@
 <!-- li.html: 表示文章列表中的每一篇文章占据的区域 -->
 <!-- 包含这篇文章的标题、作者、摘要等内容 -->
 
+<!-- TODO: 添加缩略图 -->
 
 <article>
     <header>
@@ -23,7 +24,7 @@
             {{ chomp .Summary }}
         </span>
         {{ if .Truncated }}
-        ……<a href="{{ .Permalink | safeURL }}">查看全文</a>
+        ... ...<a href="{{ .Permalink | safeURL }}">查看全文</a>
         {{ end }}
     </div>
 

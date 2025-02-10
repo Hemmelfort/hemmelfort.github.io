@@ -6,20 +6,13 @@ draft: false
 date: 2019-12-09T11:26:27+08:00
 lastmod: 2024-04-16T19:27:04+08:00
 ---
-
-
-
-# 一文搞懂《文明6》中的 TraitType (特色)
-
 **Trait**：特性，特色。指的是某个文明专属的东西，包括各文明专属的单位、改良、建筑、区域、能力、议程等等。
 
 以单位为例，弓箭手没有 TraitType，所以谁都可以造；战象有一个属于印度的 TraitType，所以只有印度能造。
 
-
+<!--more-->
 
 ## TraitType 的定义
-
-
 
 以印度战象为例：
 
@@ -41,7 +34,6 @@ lastmod: 2024-04-16T19:27:04+08:00
 这样就完成了一个 Trait 的初步定义。
 
 
-
 ### 2. 设置显示的文本
 
 刚才定义了一个 Trait，这一步是给它设置显示给玩家看的文本。
@@ -59,7 +51,6 @@ lastmod: 2024-04-16T19:27:04+08:00
 注意：这里只有文本的编写，还没有真正绑定到具体的单位。
 
 
-
 ### 3. 这个Trait属于谁
 
 这一步用于把这个 Trait 与文明相绑定。其中 `CIVILIZATION_INDIA` 是印度文明。
@@ -70,8 +61,6 @@ lastmod: 2024-04-16T19:27:04+08:00
          TraitType="TRAIT_CIVILIZATION_UNIT_INDIAN_VARU"/>
 </CivilizationTraits>
 ```
-
-
 
 或者与领袖绑定，其中 `LEADER_GANDHI` 是领袖甘地。
 
@@ -84,10 +73,6 @@ lastmod: 2024-04-16T19:27:04+08:00
 </LeaderTraits>
 ```
 
-
-
-
-
 ## TraitType 的使用
 
 上面创建的战象 Trait 只是一个空壳，需要绑定到真正的战象单位上才生效。
@@ -99,14 +84,13 @@ lastmod: 2024-04-16T19:27:04+08:00
     <Row
         UnitType="UNIT_INDIAN_VARU"
         TraitType="TRAIT_CIVILIZATION_UNIT_INDIAN_VARU"
-         
-         <!--单位的其他内容-->
+   
+         (单位的其他内容)
          />
 </Units>
 ```
 
 同样的道理，改良设施是在 Improvements 表中加入 TraitType，建筑在 Buildings 表中，区域在 Districts 表中，等等。
-
 
 
 ---
@@ -132,28 +116,3 @@ Trait 可以是单位，也可以是某项特殊技能，只需让它在 TraitMo
 insert into TraitModifiers (TraitType, ModifierId) values
 ("FIRST_EMPEROR_TRAIT", "TRAIT_BUILDER_WONDER_PERCENT");
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -1,12 +1,15 @@
 ---
 title: "文明6 MOD开发所需的各种链接"
 date: 2020-04-18T15:35:25+08:00
+lastmod: 2024-08-16T19:20:00+08:00
 draft: false
 author: Hemmelfort
 isCJKLanguage: true
 ---
+本文记录的是在文明 6 模组开发过程中所需要的各种软件、工具的下载链接。
 
-本文记录的是在文明6模组开发过程中所需要的各种软件、工具的下载链接。
+<!--more-->
+
 
 ### Blender 导入导出插件
 
@@ -81,9 +84,8 @@ https://docs.google.com/spreadsheets/d/1hQ8zlEHl1nfjCWvKqOlkDACezu5-igfQkVcOxeE_
 
 用途：供没有 Steam 版《文明6》的玩家（如在 Epic 平台入手的）使用的 ModBuddy。
 
-链接： https://pan.baidu.com/s/1ibCp4MO6Ur5h7DqqkfzZdg 
+链接： https://pan.baidu.com/s/1ibCp4MO6Ur5h7DqqkfzZdg
 提取码：lgjy
-
 
 
 ### RAD Tools
@@ -91,7 +93,5 @@ https://docs.google.com/spreadsheets/d/1hQ8zlEHl1nfjCWvKqOlkDACezu5-igfQkVcOxeE_
 用途：将 .avi 格式的视频转换成 .bik 格式，在游戏中某些可以播放视频的地方用到（比如主菜单界面的背景视频）。
 
 - 官方下载： https://www.radgametools.com/bnkdown.htm
-
-
 
 bik 文件更多信息可以参考：https://www.niuxuezhang.cn/video-format/convert-mp4-to-bik.html

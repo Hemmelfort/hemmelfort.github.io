@@ -1,12 +1,11 @@
 ---
 title: 文明6 MOD辅助工具 更新日志
-date: 2019-03-18
+date: 2019-03-18T11:49:02+08:00
+lastmod: 2020-06-30T21:10:34+08:00
 draft: false
 author: Hemmelfort
 isCJKLanguage: true
 ---
-
-
 🎡 **主要功能**：
 
 1. 将图片素材批量转换成不同分辨率的图标文件，并生成相应的 Atlas。支持多图标文件。
@@ -14,6 +13,10 @@ isCJKLanguage: true
 3. 支持创建自定义修改器 Modifier，内置 **EffectType** 、**Requirement** 关联列表，可以快速实现各种修改效果。
 4. 批量文本定义，收集 MOD 项目中的文本词条，方便统一修改。
 5. 用填表的方式来创建新文明需要的 xml 文件。
+
+
+<!--more-->
+
 
 ![v1.64版](_v_images/image-20210519223350036.jpg)
 
@@ -30,8 +33,6 @@ isCJKLanguage: true
 4. 加入更多本地化文本编辑器的功能。
 5. 主界面更新。
 
-
-
 ## v1.5
 
 2019.03.08
@@ -47,7 +48,6 @@ isCJKLanguage: true
 6. 完善了大部分未汉化的词条。
 7. 单文件。
 
-
 ## v1.4
 
 2019/01/20
@@ -56,7 +56,6 @@ isCJKLanguage: true
 2. 转换 dds 文件时可以自定义参数。
 3. 支持在 mod 文本中加入图标。
 4. 加入搜索功能。
-
 
 ## v1.3
 
@@ -68,7 +67,6 @@ isCJKLanguage: true
 4. 完善 Mod.Art.xml 导出功能，现在支持更多的 artdef 文件了。
 5. 自定义导出 DDS 文件名。
 
-
 ## v1.2
 
 2018/12/08
@@ -79,11 +77,9 @@ isCJKLanguage: true
 4. 可以当作一个 DDS 转换器来用。
 5. 修复一个小 Bug。
 
-
 ## v1.0
 
 2018/12/03
 
 1. 生成不同尺寸的的 DDS 图片。
 2. 生成 Atlas。
-
