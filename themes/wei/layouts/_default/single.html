@@ -18,12 +18,12 @@
             <span>字数: {{ .WordCount }}</span>
         </div>
 
+        {{ if ne .Date .Lastmod }}
         <div class="article-info">
-            {{ if ne .Date .Lastmod }}
             <i class="fa fa-pencil-square"></i>
             <span>最后更新：{{ .Lastmod.Format "2006.01.02" }}</span>
-            {{ end }}
         </div>
+        {{ end }}
 
         <!-- <div id="toc" style="display: block;">
             {{ .TableOfContents }}

@@ -73,6 +73,10 @@
     font-size: 1.5rem;
 }
 
+.article-title a {
+    text-decoration: none;
+}
+
 .article-info {
     color: darkgrey;
     font-size: small;

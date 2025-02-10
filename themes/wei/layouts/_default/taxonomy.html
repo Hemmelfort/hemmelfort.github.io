@@ -1,4 +1,4 @@
-<!-- 分类页面 -->
+<!-- 分类页面，默认是 categories，可以看到一个包含所有章节的列表 -->
 <!-- Context 是 Page -->
 
 <html>
@@ -7,24 +7,17 @@
 <body>
     {{ partial "header.html" . }}
 
-    <!-- <section class="article-list">
-        <h1>{{ .Title }}</h1>
-        {{ range .Data.Pages }}
-        <hr />
-        {{ .Render "li" }}
-        {{ end }}
-    </section> -->
-
-
     <div class="category-list container">
         <h3>{{ .Title }}</h3>
+        <p class="text-secondary">一共有 {{ .Site.Sections | len }} 个目录。</p>
         <hr />
 
-        <div class="list-group">
+        <div class="list-group col-sm-6 mt-5">
             {{ range .Site.Sections }}
-            <a class="list-group-item" href="{{.Permalink | safeURL}}">
+            <a class="list-group-item list-group-item-action list-group-item-secondary justify-content-between align-items-center d-flex"
+                href="{{.Permalink | safeURL}}">
                 {{.Title}}
-                <span class="badge badge-pill badge-primary">
+                <span class="badge rounded-pill bg-primary">
                     {{.Data.Pages | len}}
                 </span>
             </a>
