@@ -6,15 +6,19 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>{{ .Title }}</title>
-    <link rel="shortcut icon" href="{{$base_url}}/favicon.ico" />
-    <link rel="stylesheet" href="{{$base_url}}/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="{{$base_url}}/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="{{$base_url}}/css/custom.css" />
+    <link rel="shortcut icon" href="{{$base_url}}favicon.ico" />
+    <link rel="stylesheet" href="{{$base_url}}css/font-awesome.min.css" />
+    <link rel="stylesheet" href="{{$base_url}}css/bootstrap.min.css" />
+    <link rel="stylesheet" href="{{$base_url}}css/custom.css" />
 
-    <script src="{{$base_url}}/js/bootstrap.bundle.min.js"></script>
-    <script src="{{$base_url}}/js/custom.js"></script>
+    <script src="{{$base_url}}js/bootstrap.bundle.min.js"></script>
+    <script src="{{$base_url}}js/custom.js"></script>
 
-    <!-- 统计访问量 -->
+    {{ if hasPrefix .Site.BaseURL "http://192.168." }}
+
+    {{ else }}
+    <!-- 如果不是调试模式，则统计访问量 -->
     <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    {{ end }}
 
 </head>

@@ -9,14 +9,18 @@
 
     <div class="category-list container">
         <h3>{{ .Title }}</h3>
-        <p class="text-secondary">一共有 {{ .Site.Sections | len }} 个目录。</p>
+        <p class="text-secondary">
+            <span><i class="fa fa-folder-open"></i></span>
+            一共有 {{ .Site.Sections | len }} 个目录。
+        </p>
         <hr />
 
         <div class="list-group col-sm-6 mt-5">
             {{ range .Site.Sections }}
-            <a class="list-group-item list-group-item-action list-group-item-secondary justify-content-between align-items-center d-flex"
+            <a class="list-group-item list-group-item-action list-group-item-light justify-content-between align-items-center d-flex"
                 href="{{.Permalink | safeURL}}">
-                {{.Title}}
+
+                <span><i class="fa fa-folder-o me-2"></i>{{.Title}}</span>
                 <span class="badge rounded-pill bg-primary">
                     {{.Data.Pages | len}}
                 </span>
