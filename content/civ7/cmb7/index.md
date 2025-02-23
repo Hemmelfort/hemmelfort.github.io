@@ -17,9 +17,9 @@ lastmod: 2025-02-22T14:15:27+08:00
 
 
 
-项目仓库（含下载地址）： https://gitee.com/Hemmelfort/civmodbuilder7
+项目仓库： https://gitee.com/Hemmelfort/civmodbuilder7
 
-![主界面截图](_v_images/CMB7.jpg)
+![主界面截图](CMB7.jpg)
 
 
 
@@ -30,6 +30,27 @@ lastmod: 2025-02-22T14:15:27+08:00
 文明 7 简化了 Modifier 的写法，条件集 RequirementSetId 和子条件 RequirementId 都会自动生成，只有工具第一行的 ModifierId 属于**必填项**，它是该 Modifier 的标识符。
 
 右下角的参数可以自行增删，有时候不是每个参数都用到。
+
+
+
+### v1.1
+
+2025-02-23
+
+https://hemmelfort.lanzoub.com/ie1SY2onvmgj
+
+- fix: 多开时导致闪退
+- fix: AvalonEdit 编辑器文档开头带BOM导致全文复制时可能有非法字符
+
+
+
+### v1.0
+
+2025-02-22
+
+第一个正式版本。
+
+https://hemmelfort.lanzoub.com/iWYZN2oky9wh
 
 
 
