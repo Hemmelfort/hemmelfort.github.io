@@ -45,10 +45,13 @@ body.dark-mode {
     
     --surface: #444;
     --surface-bright: #666;
-    --surface-dim: #222;
+    --surface-dim: #333;
     --on-surface: #eee;
 }
-
+::selection {
+    color: var(--primary-container);
+    background-color: var(--primary);
+}
 
 .wrap-center {
     width: 100%;
@@ -119,7 +122,7 @@ body.dark-mode {
     visibility: hidden;
     background: var(--surface);
     border: grey 1px;
-    box-shadow: grey 5px 8px 10px;
+    box-shadow: var(--surface-dim) 5px 8px 10px;
 }
 #chapterList > .list-group-item:not(:last-child) {
     border-bottom: 1px dotted #ccc;
@@ -225,14 +228,46 @@ h1, h2, h3, h4, h5 {
 }
 
 .article-content h2 {
-    margin-left: auto;
-    margin-right: auto;
+    margin: 1em auto 2em auto;
     width: fit-content;
+    position: relative;
 }
 .article-content h2:after {
     content: '';
     display: block;
     border-bottom: 1px solid;
+    margin-top: 4px;
+    color: var(--surface-dim);
+}
+/*.article-content h2:before {
+    content: '⚝';
+    display: block;
+    position: absolute;
+    top: 1.5em;
+    bottom: 0;
+    right: 50%;
+    transform: translate(50%, 50%);
+    color: var(--surface-dim);
+}*/
+
+.article-content h3 {
+    position: relative;
+    padding: 2px 12px;
+    width: fit-content;
+    z-index: 1;
+}
+.article-content h3:before {
+    content: '';
+    color: var(--on-secondary);
+    background-color: var(--secondary-container);
+    border: 1px solid;
+    border-radius: 20px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
 }
 
 /* md代码块 */
@@ -252,12 +287,12 @@ strong {
 }
 
 code {
-    font-family: Consolas, monospace;
+    font-family: Consolas, Monaco, SFMono-Regular, monospace;
 }
 /*行内代码*/
 code:not(:has(*)) {
-    background-color: var(--primary-container);
-    padding: 2px;
+    background-color: var(--surface-dim);
+    padding: 2px 4px;
     border-radius: 4px;
 }
 

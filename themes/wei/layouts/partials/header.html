@@ -25,9 +25,8 @@
             <a class="navitem dropdown-toggle" id="ddChapter" href="{{$base_url}}categories">
                 <i class="fa fa-file-text-o"></i> 文章分类
             </a>
-            <div class="list-group" id="chapterList">
+            <div class="list-group" id="chapterList" style="opacity:0">
                 {{ range .Site.Sections }}
-                <!-- https://getbootstrap.com/docs/5.1/components/list-group/ -->
                 <a class="list-group-item" href="{{.Permalink | safeURL}}">
                     {{.Title}}
                     <span class="badge">
