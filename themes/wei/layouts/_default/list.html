@@ -7,19 +7,21 @@
 <body>
     {{ partial "header.html" . }}
 
-    <div class="container category-list mt-4">
-        <div>
-            <span style="font-size: 1.5em; font-weight: bold;">{{ .Title }}</span>
-            <span style="font-size: 0.8em;" class="text-secondary">
-                <i class="fa fa-file-text-o"></i>
-                文章数：{{ .Data.Pages | len }}</span>
-        </div>
-        <div style="font-size:0.8em" class="text-secondary">
-            {{ (.Site.GetPage .Section).Description }}
-        </div>
-        <hr />
+    <div class="wrap-center">
+        <div class="main-container">
+            <div>
+                <span style="font-size: 1.5em; font-weight: bold;">{{ .Title }}</span>
+                <span style="font-size: 0.8em;" class="text-secondary">
+                    <i class="fa fa-file-text-o"></i>
+                    文章数：{{ .Data.Pages | len }}</span>
+            </div>
+            <div style="font-size:0.8em" class="text-secondary">
+                {{ (.Site.GetPage .Section).Description }}
+            </div>
+            <hr />
 
-        {{ partial "articlelist.html" .}}
+            {{ partial "articlelist.html" .}}
+        </div>
     </div>
 
     {{ partial "footer.html" . }}

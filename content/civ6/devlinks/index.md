@@ -44,11 +44,12 @@ isCJKLanguage: true
 
 作者：Hemmelfort
 
-- 链接： https://pan.baidu.com/s/1ecRnOr0_e21M0FXoKBsB_A （提取码：igaa）
+- 旧版（20200704）： https://pan.baidu.com/s/1ecRnOr0_e21M0FXoKBsB_A （提取码：igaa）
+- 新版（20250806）： https://hemmelfort.lanzoub.com/i8nDF32t378d （待测试）
 
 用途：不用下载官方 Assets 数据包就能使用 AssetEditor。
 
-使用方法：详见文件中。
+使用方法：详见文件中的说明。
 
 
 ### Wwise

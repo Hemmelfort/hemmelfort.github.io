@@ -4,9 +4,8 @@
 {{ $base_url := .Site.BaseURL | safeURL }}
 
 <!-- 大横幅 -->
-<div class="container-fluid"
-    style="background-image: url({{$base_url}}/images/head_bg.jpg); background-position: center 20%;">
-    <div class="container custom-jumbotron">
+<div class="fluid" style="background-image: url({{$base_url}}/images/head_bg.jpg); background-position: center 20%; background-size: cover;">
+    <div class="wrap-center custom-jumbotron">
 
         {{with .Site.Title }}
         <p class="custom-jumbotron-para">{{.}}</p>
@@ -17,21 +16,21 @@
 <!-- 顶部菜单栏 -->
 <div class="sticky-top navmenu">
 
-    <div class="container" style="display: flex; align-items: stretch; height: inherit;">
+    <div class="wrap-center" style="display: flex; align-items: stretch; height: inherit;">
 
-        <a class="nav-link navitem" href="{{$base_url}}">
-            <i class="fa fa-home"></i>
-            首页
+        <a class="navitem" href="{{$base_url}}">
+            <i class="fa fa-home"></i> 首页
         </a>
         <div id="ddChapterGroup">
-            <a class="nav-link navitem dropdown-toggle" id="ddChapter" href="{{$base_url}}categories">文章分类</a>
+            <a class="navitem dropdown-toggle" id="ddChapter" href="{{$base_url}}categories">
+                <i class="fa fa-file-text-o"></i> 文章分类
+            </a>
             <div class="list-group" id="chapterList">
                 {{ range .Site.Sections }}
                 <!-- https://getbootstrap.com/docs/5.1/components/list-group/ -->
-                <a class="list-group-item list-group-item-action list-group-item-light justify-content-between align-items-center d-flex"
-                    href="{{.Permalink | safeURL}}">
+                <a class="list-group-item" href="{{.Permalink | safeURL}}">
                     {{.Title}}
-                    <span class="badge bg-primary rounded-pill ms-4">
+                    <span class="badge">
                         {{.Data.Pages | len}}
                     </span>
                 </a>
@@ -42,7 +41,7 @@
         {{/*
         {{ if .IsPage }}
         {{ $section := .Site.GetPage .Section }}
-        <a class="nav-link navitem" href="{{$section.Permalink | safeURL }}">返回章节</a>
+        <a class="navitem" href="{{$section.Permalink | safeURL }}">返回章节</a>
         {{ end }}
         */}}
 
@@ -51,6 +50,8 @@
             <a href="{{$base_url}}others/about">
                 <img class="avatar-icon" src="{{$base_url}}images/avatar.jpg" alt="author">
             </a>
+
+            {{ partial "dark-mode.html" . }}
         </span>
 
     </div>

@@ -23,10 +23,10 @@
         <span class="article-summary">
             {{ chomp .Summary }}
         </span>
-        {{ if .Truncated }}
+        {{/* if .Truncated }}
         ......
-        <a class="text-decoration-none" href="{{ .Permalink | safeURL }}">查看全文</a>
-        {{ end }}
+        <a href="{{ .Permalink | safeURL }}">查看全文</a>
+        {{ end */}}
     </div>
 
 </article>
