@@ -355,3 +355,7 @@ blockquote p {
     padding: 16px 0;
     margin-top: auto;
 }
+
+#busuanzi_container_site_pv {
+    color: var(--surface-dim);
+}

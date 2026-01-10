@@ -24,7 +24,7 @@ isCJKLanguage: true
 
 2020.06.30
 
-- https://hemmelfort.lanzoui.com/iPnA5gdrpef
+- https://pan.baidu.com/s/1MSzBItupNgaoCYm5NBj-2A?pwd=wmm7 （提取码：wmm7）
 - https://drive.google.com/file/d/1AOIu2vuUjNoxd9bjbo6dVxV5VLu0_Diz/view?usp=sharing
 
 1. 配合 Asset Editor 的改进，可以生成 png 格式的图标，而不只是 dds。
@@ -37,8 +37,7 @@ isCJKLanguage: true
 
 2019.03.08
 
-- https://hemmelfort.lanzous.com/ibm0yhe
-- https://pan.baidu.com/s/1EuOwY4l__LSa_zAmFC0XjA （提取码：jifq）
+https://pan.baidu.com/s/1EuOwY4l__LSa_zAmFC0XjA （提取码：jifq）
 
 1. 修复中文路径下导出图片的错误。
 2. 修复因 dds 缩放问题导致的显示异常。

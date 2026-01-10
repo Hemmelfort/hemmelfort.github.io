@@ -17,7 +17,6 @@ isCJKLanguage: true
 
 - https://forums.civfanatics.com/resources/blender-scripts-for-civ-v-and-civ-vi.25925/
 - https://pan.baidu.com/s/1JSNaekYwNuSOM73B7FdgVA （提取码：4bon）
-- https://hemmelfort.lanzoui.com/iKkROdgxsbg
 
 用途：让 Blender 能够导入导出 `.cn6` 格式的模型文件。
 
@@ -30,7 +29,6 @@ isCJKLanguage: true
 
 - https://forums.civfanatics.com/resources/civnexus6.25987/
 - https://pan.baidu.com/s/1Zlh9g_fIdELpXScrciuDcQ （提取码：2mh1）
-- https://hemmelfort.lanzous.com/iJ7nxdgxsaf
 
 用途：处理 cn6 和 fgx 文件、生成 geo 文件等等。
 
@@ -44,8 +42,8 @@ isCJKLanguage: true
 
 作者：Hemmelfort
 
-- 旧版（20200704）： https://pan.baidu.com/s/1ecRnOr0_e21M0FXoKBsB_A （提取码：igaa）
-- 新版（20250806）： https://hemmelfort.lanzoub.com/i8nDF32t378d （待测试）
+- 旧版（20200704）： https://pan.baidu.com/s/1ecRnOr0_e21M0FXoKBsB_A?pwd=igaa （提取码：igaa）
+- 新版（20250806）： https://pan.baidu.com/s/1ziiiAVCxoZBrSa4RPjJh5w?pwd=fkk2 （提取码：fkk2）
 
 用途：不用下载官方 Assets 数据包就能使用 AssetEditor。
 
@@ -75,10 +73,6 @@ Civ VI Modding Companion (作者: ChimpanG)
 
 https://docs.google.com/spreadsheets/d/1hQ8zlEHl1nfjCWvKqOlkDACezu5-igfQkVcOxeE_KG0/edit?usp=sharing
 
-国内下载地址：
-
-- Excel版： https://hemmelfort.lanzoui.com/ikovTgdrkne
-- Html版： https://hemmelfort.lanzoui.com/iIJ7xgdrklc
 
 
 ### ModBuddy 绿色版

@@ -23,7 +23,7 @@ CivModBuilder 是新开发的一个小工具，可以查看《文明6》游戏�
 
 2023-12-16
 
-https://hemmelfort.lanzouj.com/ieAES1i98vbe
+https://pan.baidu.com/s/1XtnAUUSir4_3H9fOuEzgBA?pwd=897f
 
 1. 数据更全面，完整覆盖所有 DLC。
 2. 修复：ModifierType 输入框自动补全会影响到效果器。

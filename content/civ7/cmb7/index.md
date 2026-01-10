@@ -37,7 +37,8 @@ lastmod: 2025-02-22T14:15:27+08:00
 
 2025-02-23
 
-https://hemmelfort.lanzoub.com/ie1SY2onvmgj
+链接： https://pan.baidu.com/s/1ImoAfI0bgR-5Xg4w-2SFAg?pwd=zk3b 
+提取码：zk3b
 
 - fix: 多开时导致闪退
 - fix: AvalonEdit 编辑器文档开头带BOM导致全文复制时可能有非法字符
@@ -50,7 +51,6 @@ https://hemmelfort.lanzoub.com/ie1SY2onvmgj
 
 第一个正式版本。
 
-https://hemmelfort.lanzoub.com/iWYZN2oky9wh
 
 
 
